@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     Input,
     Typography,
@@ -6,7 +6,7 @@ import {
     Button
 } from "@material-tailwind/react";
 
-import { 
+import {
     AuthCarousel,
     AuthHeader,
     SocialLogin
@@ -14,6 +14,8 @@ import {
 import { authStyle } from "./sharedStyle";
 
 function Register() {
+    const navigate = useNavigate();
+
     return (
         <div className={`${authStyle.wrap} max-w-screen-xl`}>
             <div className="flex lg:justify-between">
@@ -38,6 +40,7 @@ function Register() {
                                 <Input type="password" label="Confirm Password" />
                             </div>
                             <Checkbox
+                                color="blue-gray"
                                 label={
                                     (
                                         <Typography
@@ -45,16 +48,18 @@ function Register() {
                                             color="gray"
                                             className="flex items-center font-normal"
                                         >
-                                            I agree to all the 
-                                            <a href="#" className="my-auto text-sm text-blue-400">&nbsp;Terms&nbsp;</a> 
-                                            and 
-                                            <a href="#" className="my-auto text-sm text-blue-400">&nbsp;Privacy Policies</a>
+                                            I agree to all the
+                                            <a href="/#" className="my-auto text-sm text-blue-400">&nbsp;Terms&nbsp;</a>
+                                            and
+                                            <a href="/#" className="my-auto text-sm text-blue-400">&nbsp;Privacy Policies</a>
                                         </Typography>
                                     )
                                 }
                                 containerProps={{ className: "-ml-2.5" }}
                             />
-                            <Button className="mt-6 text-black normal-case" fullWidth>
+                            <Button
+                                onClick={() => navigate('/register/payment')}
+                                className="mt-6 text-black normal-case" fullWidth>
                                 Create account
                             </Button>
                             <Typography color="gray" className="mt-4 text-center font-normal">

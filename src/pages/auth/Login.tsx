@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     Input,
     Typography,
@@ -6,7 +6,7 @@ import {
     Button
 } from "@material-tailwind/react";
 
-import { 
+import {
     AuthCarousel,
     AuthHeader,
     SocialLogin
@@ -14,6 +14,8 @@ import {
 import { authStyle } from "./sharedStyle";
 
 function Login() {
+    const navigate = useNavigate();
+
     return (
         <div className={`${authStyle.wrap} max-w-screen-lg`}>
             <div className="flex lg:justify-between">
@@ -28,6 +30,7 @@ function Login() {
                             </div>
                             <div className="flex justify-between">
                                 <Checkbox
+                                    color="blue-gray"
                                     label={
                                         (
                                             <Typography
@@ -43,7 +46,9 @@ function Login() {
                                 />
                                 <Link to={'/auth/forgot-password'} className="my-auto text-sm text-blue-400">Forgot Password</Link>
                             </div>
-                            <Button className="mt-6 text-black normal-case" fullWidth>
+                            <Button
+                                onClick={() => navigate("/")}
+                                className="mt-6 text-black normal-case" fullWidth>
                                 Login
                             </Button>
                             <Typography color="gray" className="mt-4 text-center font-normal">

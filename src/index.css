@@ -20,3 +20,8 @@ body {
     width: 30px !important;
     border-radius: 5px !important;
 }
+
+/* select box css issue */
+ul[role="listbox"]{
+    opacity: 1 !important;
+}
