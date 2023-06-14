@@ -32,6 +32,7 @@ function AddPayment() {
                             text="Let’s get you all st up so you can access your personal account."
                             backBtn={true}
                             backTxt="Back"
+                            backLink="/register"
                         />
 
                         <form className="mt-6">
