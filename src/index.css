@@ -8,3 +8,15 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #062D4A;
 }
+
+/* custom carousel css */
+.carousel .control-dots .dot{
+    background: #fff !important;
+    opacity:1 !important;
+    margin: 0 4px !important; 
+}
+.carousel .control-dots .dot.selected{
+    background: #51B3FF !important;
+    width: 30px !important;
+    border-radius: 5px !important;
+}
