@@ -6,7 +6,7 @@ const Search = () => {
         <div className="">
             <Header page="search" />
 
-            <div className="max-w-screen-3xl mx-auto px-5 flex justify-between py-8">
+            <div className="max-w-screen-3xl mx-auto px-5 3xl:px-0 flex justify-between py-8">
                 <Sidebar />
 
                 <div>

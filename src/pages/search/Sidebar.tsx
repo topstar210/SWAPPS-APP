@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DatePicker from 'react-datepicker';
+import ReactSlider from "react-slider";
 import 'react-datepicker/dist/react-datepicker.css';
 import { Radio, Checkbox, Button } from "@material-tailwind/react";
 
@@ -83,7 +84,6 @@ const Sidebar = () => {
                             id="add-nearby-airports"
                             ripple={false}
                             className="hover:before:opacity-0"
-
                         />
                         <label htmlFor="add-nearby-airports">
                             Add nearby airports
@@ -91,15 +91,150 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div className="mb-2">
-                <Button size="lg" className="w-full text-center text-white normal-case bg-search-btn flex justify-center items-center gap-2 rounded-2xl">
-                    Search Flights
-                    <img src="/icons/flight.svg" alt="fligt-icon" />
-                </Button>
+                    <Button size="lg" className="w-full text-center text-white normal-case bg-search-btn flex justify-center items-center gap-2 rounded-2xl">
+                        Search Flights
+                        <img src="/icons/flight.svg" alt="fligt-icon" />
+                    </Button>
                 </div>
             </div>
 
             {/* filters */}
-            
+            <div className="px-6 py-10">
+                <div className="text-[20px] font-bold w-full my-5">Filters</div>
+                <div>
+                    <div className="flex justify-between">
+                        <div className="font-semibold">Price</div>
+                        <button><img src="/icons/arrow-up.svg" alt="" /></button>
+                    </div>
+                    <div className="py-8">
+                        <ReactSlider
+                            onAfterChange={(val) => { }}
+                            className="filter-slider w-full"
+                            thumbClassName="filter-thumb"
+                            trackClassName="filter-track"
+                            defaultValue={[50, 1200]}
+                            min={50}
+                            max={1200}
+                            renderThumb={(props, state) => <div {...props}>
+                                <div className="f_mark"></div>
+                                <div className="f_value">${state.valueNow}</div>
+                            </div>}
+                            renderTrack={(props, state) => <div {...props}></div>}
+                            minDistance={1}
+                        />
+                    </div>
+                    <div className="bg-[#062D4A] opacity-25 h-[0.5px] my-10" />
+                </div>
+                <div>
+                    <div className="flex justify-between">
+                        <div className="font-semibold">Departure Time</div>
+                        <button><img src="/icons/arrow-up.svg" alt="" /></button>
+                    </div>
+                    <div className="py-8">
+                        <ReactSlider
+                            onAfterChange={(val) => { }}
+                            className="filter-slider w-full"
+                            thumbClassName="filter-thumb"
+                            trackClassName="filter-track"
+                            defaultValue={[0, 24]}
+                            min={0}
+                            max={24}
+                            renderThumb={(props, state) => <div {...props}>
+                                <div className="f_mark"></div>
+                                <div className="f_value">{state.valueNow}</div>
+                            </div>}
+                            renderTrack={(props, state) => <div {...props}></div>}
+                            minDistance={1}
+                        />
+                    </div>
+                    <div className="bg-[#062D4A] opacity-25 h-[0.5px] my-10" />
+                </div>
+                <div>
+                    <div className="flex justify-between">
+                        <div className="font-semibold">Airlines</div>
+                        <button><img src="/icons/arrow-up.svg" alt="" /></button>
+                    </div>
+                    <div className="py-3">
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-1"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-1" className="ml-3">
+                                Emirated
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-wizz"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-wizz" className="ml-3">
+                                WIZZ
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-air-china"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-air-china" className="ml-3">
+                                AIR CHINA
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-delta"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-delta" className="ml-3">
+                            DELTA AIRLINES
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-fly-dubai"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-fly-dubai" className="ml-3">
+                            Fly Dubai
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-qatar"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-qatar" className="ml-3">
+                                Qatar
+                            </label>
+                        </div>
+                        <div className="flex items-center">
+                            <Checkbox
+                                id="airlines-ethihad"
+                                ripple={false}
+                                className="hover:before:opacity-0"
+                                containerProps={{ className: "px-0" }}
+                            />
+                            <label htmlFor="airlines-ethihad" className="ml-3">
+                                Etihad
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

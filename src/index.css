@@ -43,3 +43,31 @@ ul[role="listbox"] {
 ::-webkit-scrollbar-thumb {
     background-color: #52B4FF;
 }
+
+/* customizing slider */
+.filter-track.filter-track-0{
+    height: 2px;
+    background: #F5F5F5;
+}
+.filter-track.filter-track-1{
+    height: 2px;
+    background: #062D4A;
+}
+.filter-thumb.filter-thumb-1, .filter-thumb.filter-thumb-0{
+    outline: none
+}
+
+.filter-thumb .f_mark{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #53B5FF;
+    margin-top: -12px;
+}
+.filter-thumb.filter-thumb-1{
+    margin-left: 10px;
+}
+.filter-thumb.filter-thumb-1 .f_value{
+    position: absolute;
+    right: 0;
+}

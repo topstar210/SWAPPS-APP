@@ -62,7 +62,7 @@ const Home = () => {
             </div>
 
             {/* populer items */}
-            <div className="max-w-screen-3xl mx-auto min-h-[500px] mt-16 px-5">
+            <div className="max-w-screen-3xl mx-auto min-h-[500px] mt-16 px-5 3xl:px-0">
                 {/* flights */}
                 <TicketsSection title="Flight" data={[]} />
                 <TicketsSection title="Hotels" data={[]} />
