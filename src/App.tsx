@@ -8,6 +8,7 @@ import ForgotPassword from "pages/auth/ForgotPassword"
 import VerifyCode from "pages/auth/VerifyCode"
 // home
 import Home from "pages/home/Home";
+import Search from "pages/search/Search";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         <Route path="/register/payment" element={<AddPayment />} />
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/verify-code" element={<VerifyCode />} />
+
+        <Route path="/search" element={<Search />} />
       </Routes>
     </div>
   );  

@@ -20,7 +20,8 @@ module.exports = withMT({
         "buyerticket": "url('../public/icons/buyers.svg')",
         "switchbtn": "linear-gradient(98.47deg, #52B4FF 24.04%, #6A64DE 107.13%)",
         "card-price": "radial-gradient(120% 120% at 100% 0%, #52B4FF 73.44%, #6A64DE 100%)",
-        "carousel-arrow": "linear-gradient(245.68deg, #52B4FF 51.46%, #3CA2F0 86.93%)"
+        "carousel-arrow": "linear-gradient(245.68deg, #52B4FF 51.46%, #3CA2F0 86.93%)",
+        "search-btn": "radial-gradient(90.25% 187.15% at 16.82% 100%, #52B4FF 73.44%, #6A64DE 100%)"
       },
       colors: {
         'purple': '#7A85E6'

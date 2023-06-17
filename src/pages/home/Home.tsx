@@ -8,7 +8,7 @@ import TicketsSection from "./TicketsSection";
 const Home = () => {
     return (
         <div className="overflow-x-clip">
-            <Header />
+            <Header page="home" />
 
             {/* home here */}
             <div className="bg-white px-5 py-5">

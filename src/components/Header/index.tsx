@@ -3,7 +3,10 @@ import { Button } from "@material-tailwind/react";
 
 import SearchForm from "./SearchForm";
 
-const Header = () => {
+interface HeaderProps {
+    page?: string
+}
+const Header = ({ page }: HeaderProps) => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
@@ -15,7 +18,7 @@ const Header = () => {
 
     return (
         <div className="bg-header relative shadow-md">
-            <div className="max-w-screen-3xl mx-auto flex justify-between items-center py-3 px-5">
+            <div className="max-w-screen-3xl mx-auto flex justify-between items-center py-3 px-5 3xl:px-0">
                 <a href="/" className="flex">
                     <img src="/images/logo-white.svg" alt="logo" />
                     <img src="/images/logo-white-txt.svg" alt="logo-text" />
@@ -62,12 +65,14 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-6 px-5">
-                <div className="w-full">
-                    <SearchForm />
-                    <img src="/images/flight-in-round.svg" className="hidden 2xl:block absolute 2xl:left-[80%] 3xl:left-[70%] -bottom-[125px]" alt="" />
+            {page === "home" &&
+                <div className="py-6 px-5">
+                    <div className="w-full">
+                        <SearchForm />
+                        <img src="/images/flight-in-round.svg" className="hidden 2xl:block absolute 2xl:left-[80%] 3xl:left-[70%] -bottom-[125px]" alt="" />
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }
