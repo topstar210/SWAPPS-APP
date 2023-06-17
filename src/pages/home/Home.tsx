@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
-import ServiceSection from "./ServiceSection";
+import TicketsSection from "./TicketsSection";
 
 const Home = () => {
     return (
@@ -64,9 +64,9 @@ const Home = () => {
             {/* populer items */}
             <div className="max-w-screen-3xl mx-auto min-h-[500px] mt-16 px-5">
                 {/* flights */}
-                <ServiceSection title="Flight" data={[]} />
-                <ServiceSection title="Hotels" data={[]} />
-                <ServiceSection title="Holidays" data={[]} />
+                <TicketsSection title="Flight" data={[]} />
+                <TicketsSection title="Hotels" data={[]} />
+                <TicketsSection title="Holidays" data={[]} />
             </div>
 
             <Footer />

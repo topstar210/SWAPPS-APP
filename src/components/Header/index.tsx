@@ -1,8 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
 import SearchForm from "./SearchForm";
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        navigate('/login')
+    }
+    const handleSignUP = () => {
+        navigate('/register')
+    }
+
     return (
         <div className="bg-header relative shadow-md">
             <div className="max-w-screen-3xl mx-auto flex justify-between items-center py-3 px-5">
@@ -11,8 +21,15 @@ const Header = () => {
                     <img src="/images/logo-white-txt.svg" alt="logo-text" />
                 </a>
                 <div className="grid gap-2 grid-cols-2">
-                    <Button size="sm" variant="text" className="text-white normal-case p-2 sm:p-auto">Sign In</Button>
-                    <Button size="sm" className="normal-case text-blue-500 bg-white p-2 sm:p-auto">Sign Up</Button>
+                    <Button
+                        onClick={() => handleLogin()}
+                        size="sm"
+                        variant="text"
+                        className="text-white normal-case p-2 sm:p-auto">Sign In</Button>
+                    <Button
+                        onClick={() => handleSignUP()}
+                        size="sm"
+                        className="normal-case text-blue-500 bg-white p-2 sm:p-auto">Sign Up</Button>
                 </div>
             </div>
             <div className="bg-white px-5">
