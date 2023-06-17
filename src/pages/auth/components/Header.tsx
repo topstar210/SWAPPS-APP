@@ -21,7 +21,7 @@ export const AuthHeader = (props: AuthHeaderProps) => {
             {
                 props.backBtn &&
                 <div className="flex items-center mb-3">
-                    <img src="/images/arrow-back.svg" alt="arrow-back" />
+                    <img src="/icons/arrow-back.svg" alt="arrow-back" />
                     <Link to={props.backLink ?? ""} className="pl-4">{props.backTxt}</Link>
                 </div>
             }

@@ -17,21 +17,21 @@ export const SocialLogin = () => {
                     color="blue"
                     className="flex items-center justify-center"
                 >
-                    <img src="/images/facebook.svg" alt="facebook" className="h-6 w-6" />
+                    <img src="/icons/facebook.svg" alt="facebook" className="h-6 w-6" />
                 </Button>
                 <Button
                     variant="outlined"
                     color="blue"
                     className="flex items-center justify-center"
                 >
-                    <img src="/images/google.svg" alt="google" className="h-6 w-6" />
+                    <img src="/icons/google.svg" alt="google" className="h-6 w-6" />
                 </Button>
                 <Button
                     variant="outlined"
                     color="blue"
                     className="flex items-center justify-center"
                 >
-                    <img src="/images/apple.svg" alt="apple" className="h-6 w-6" />
+                    <img src="/icons/apple.svg" alt="apple" className="h-6 w-6" />
                 </Button>
             </div>
         </>

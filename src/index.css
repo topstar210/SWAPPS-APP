@@ -1,27 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: #F0F4F7;
+    font-family: 'Poppins';
     color: #062D4A;
 }
 
 /* custom carousel css */
-.carousel .control-dots .dot{
+.carousel .control-dots .dot {
     background: #fff !important;
-    opacity:1 !important;
-    margin: 0 4px !important; 
+    opacity: 1 !important;
+    margin: 0 4px !important;
 }
-.carousel .control-dots .dot.selected{
+
+.carousel .control-dots .dot.selected {
     background: #51B3FF !important;
     width: 30px !important;
     border-radius: 5px !important;
 }
 
 /* select box css issue */
-ul[role="listbox"]{
+ul[role="listbox"] {
     opacity: 1 !important;
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #52B4FF;
 }
