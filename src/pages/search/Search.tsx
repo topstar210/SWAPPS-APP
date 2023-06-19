@@ -10,7 +10,6 @@ import flights from "fakeData/flights";
 const Search = () => {
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
 
-
     return (
         <div className="relative">
             <Header page="search" />
@@ -19,7 +18,6 @@ const Search = () => {
                 <div className="w-1/4 min-w-[400px] hidden xl:block">
                     <Sidebar />
                 </div>
-
                 {
                     openMobileSearch &&
                     <div className="xl:hidden absolute top-0 left-0 w-full h-full overflow-hidden bg-[#3872e082] z-50 transition-all ease-in-out duration-100">
@@ -33,8 +31,6 @@ const Search = () => {
                         </div>
                     </div>
                 }
-
-
 
                 <div className="xl:w-3/4 xl:pl-5">
                     <div className="flex justify-between px-3">
@@ -65,7 +61,6 @@ const Search = () => {
                     </div>
                 </div>
             </div>
-
 
             <Footer />
         </div>
