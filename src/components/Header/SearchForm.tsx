@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Button } from "@material-tailwind/react";
 import DatePicker from 'react-datepicker';
@@ -12,6 +13,7 @@ import VoucherIcon from "assets/icons/Voucher"
 const SearchForm = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
     const [selTab, setSelTab] = useState<Number | 0>(0);
+    const navigate = useNavigate();
 
     return (
         <div className="mx-auto w-fit">
@@ -90,7 +92,10 @@ const SearchForm = () => {
                         </div>
                     </div>
                     <div className="lg:mx-2 mx-auto w-[330px] sm:w-[360px] mb-2 flex items-end">
-                        <Button size="lg" className="w-full text-center text-white normal-case bg-[#062D4A] flex justify-center items-center gap-2">
+                        <Button 
+                            onClick={()=>navigate('/search')}
+                            size="lg" 
+                            className="w-full text-center text-white normal-case bg-[#062D4A] flex justify-center items-center gap-2">
                             Search Flights
                             <img src="/icons/flight.svg" alt="fligt-icon" />
                         </Button>

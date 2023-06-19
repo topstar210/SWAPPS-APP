@@ -1,9 +1,13 @@
 
-import WzzInfo from "components/WzzInfo";
+import TimeInfo from "components/TimeInfo";
 
-const TicketCard = () => {
+interface dataProps{
+    data: object
+}
+
+const TicketCard = ({data}: dataProps) => {
     return (
-        <div className="p-5 sm:px-7 rounded-3xl bg-white border border-gray-300 w-full max-w-[490px] mb-3 mx-auto">
+        <div className="p-5 sm:px-7 rounded-3xl bg-white border border-gray-300 w-full max-w-[550px] mb-3 mx-auto">
             <div className="flex justify-between gap-2 mb-3 text-[14px]">
                 <div className="flex gap-1 items-center">
                     <img src="/icons/calendar.svg" alt="" />
@@ -14,8 +18,8 @@ const TicketCard = () => {
                     Tel Aviv, Israel - Barcelona, Spain
                 </div>
             </div>
-            <WzzInfo />
-            <WzzInfo />
+            <TimeInfo data={data} />
+            <TimeInfo data={data} />
             <div className="flex justify-between items-center gap-2 text-[14px]">
                 <div>
                     <div>1 tickets <span className="text-blue-500">|</span> Round trip</div>

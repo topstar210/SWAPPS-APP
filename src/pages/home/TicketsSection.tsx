@@ -49,8 +49,8 @@ const TicketsSection = ({
                     // centerMode
                 >
                     {Array.from({ length: 10 }).map((item, index) => (
-                        <div key={index} className="w-[350px] sm:w-[500px]">
-                            <TicketCard />
+                        <div key={index} className="w-[350px] sm:w-[515px] pr-5">
+                            <TicketCard data={{}} />
                         </div>
                     ))}
                 </Carousel>

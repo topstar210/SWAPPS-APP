@@ -1,7 +1,12 @@
-const WzzInfo = () => {
+
+interface dataProps{
+    data: any
+}
+
+const TimeInfo = ({data}:dataProps) => {
     return (
         <div className="flex justify-between items-center mb-3">
-            <img src="/images/wzz.svg" alt="wzz" />
+            <img src={`${data.logo?data.logo:"/images/wzz.svg"}`} alt="wzz" />
             <div className="flex justify-between items-center w-3/4">
                 <div className="text-right">
                     <div className="text-blue-500 font-bold">8:30 AM</div>
@@ -25,4 +30,4 @@ const WzzInfo = () => {
     )
 }
 
-export default WzzInfo;
+export default TimeInfo;
