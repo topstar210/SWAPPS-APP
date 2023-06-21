@@ -33,6 +33,13 @@ const Ticket = () => {
                 </div>
             </div>
 
+            <div className="max-w-screen-2xl mx-auto">
+                <div className="bg-white rounded-xl px-12">
+                    <div>
+                        <div className="text-3xl font-bold">Information</div>
+                    </div>
+                </div>
+            </div>
 
             <Footer />
         </div>
