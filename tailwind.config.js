@@ -8,6 +8,7 @@ module.exports = withMT({
   theme: {
     screens:{
       '3xl': '1536px',
+      'xl': '1208px',
     },
     extend: {
       backgroundImage: {

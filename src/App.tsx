@@ -12,7 +12,7 @@ import Search from "pages/search/Search";
 // book
 import Ticket from "pages/book/Ticket";
 import AuthToBook from "pages/book/AuthToBook";
-
+import Payment from "pages/book/Payment";
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
 
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/auth-to-book" element={<AuthToBook />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </div>
   );  

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" width="20" height="16">
+	<title>Wifi</title>
+	<defs>
+		<image  width="20" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAMAAAAhxq8pAAAAAXNSR0IB2cksfwAAAHtQTFRFAAAACChQBi1JBS1KBSpKCCxMBi1KBS5LBi1KBi5KBi1JBixKBitKByxJBixKBS5LEDBABS5KBCxIACBAAChIBSpIBS1JADBABi5KBS1KBSxHBCxMBytJBS1LBS1JBy1LBS1LCDBIBSpFBi1KBC1KBStIBCxIBixIBixKljmSqgAAACl0Uk5TACBQYDBAr+//39+vn7/PXxCQfxAgYI8Qz+9vQHDvv7+/IDBPr19Af3/cw+53AAAAo0lEQVR4nH2P6w6DIAxGEZx+oKibzMl0F3b1/Z9wBUZismTnV/nanlDGIhkXgudsxaYoESgLniJJT1XVtW6okC1F3ZaSXR/7Zq+A4cBG2KPv5YJPHRXzCWemlCHDJTqvtGuU8kvOR01daa90UeRK2CjtSSlvIbzjQVE2TTRkCjzjaJ6k4ys8vgjAam2BdnXSjMFL32n3L06m36xYgOUnNOG0yAdDZwjREasH2wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
