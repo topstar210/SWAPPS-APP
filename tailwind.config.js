@@ -27,6 +27,8 @@ module.exports = withMT({
         "flight-down-place": "url('../public/icons/flight-down-place.svg')",
         
         "btn-primary": "linear-gradient(90deg, #53B5FF 0%, #717CDE 86.77%)",
+
+        "bestthing": "url('../public/images/bestthing.png')",
       },
       colors: {
         'purple': '#7A85E6'
