@@ -11,6 +11,7 @@ import Home from "pages/home/Home";
 import Search from "pages/search/Search";
 // book
 import Ticket from "pages/book/Ticket";
+import AuthToBook from "pages/book/AuthToBook";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/search" element={<Search />} />
 
         <Route path="/ticket" element={<Ticket />} />
+        <Route path="/auth-to-book" element={<AuthToBook />} />
       </Routes>
     </div>
   );  
