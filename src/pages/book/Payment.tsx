@@ -125,7 +125,7 @@ const Payment = () => {
                         <Button onClick={() => navigate('/ticket')} variant="outlined" size="lg" className="w-1/2 text-center">
                             Previous
                         </Button>
-                        <Button size="lg" className="w-1/2 text-center bg-btn-primary">
+                        <Button onClick={() => navigate('/ticket-details')} size="lg" className="w-1/2 text-center bg-btn-primary">
                             Next
                         </Button>
                     </div>

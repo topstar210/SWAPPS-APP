@@ -32,13 +32,11 @@ module.exports = withMT({
         "bestthing": "url('../public/images/bestthing.png')",
       },
       colors: {
-        'purple': '#7A85E6'
+        'purple': '#7A85E6',
+        'cover': "#00000082",
+        'dark-green': "#062D4A"
       }
     },
-    colors:{
-      'cover': "#00000082",
-      'dark-green': "#062D4A"
-    }
   },
   plugins: [],
 });

@@ -9,7 +9,7 @@ const BookHeader = () => {
                         <div className="lg:w-2/3 px-8 py-6 bg-flight-up-place bg-[right_1rem_top] bg-no-repeat">
                             <div className="text-[30px] sm:text-[40px] font-bold">JFK</div>
                             <div className="h-1 w-[54px] bg-white"></div>
-                            <div className="mt-3 lg:mt-5 mb-9 lg:mb-12">New York John F Kennedy International Airport, USA</div>
+                            <div className="mt-3 lg:mt-5 mb-4 sm:mb-9 lg:mb-12">New York John F Kennedy International Airport, USA</div>
                             <div className="flex gap-1 items-center font-bold">
                                 <img src="/icons/clock-white.svg" className="w-4" alt="" />
                                 06:05 PM 29 Mar 2024

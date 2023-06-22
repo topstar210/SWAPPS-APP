@@ -13,6 +13,8 @@ import Search from "pages/search/Search";
 import Ticket from "pages/book/Ticket";
 import AuthToBook from "pages/book/AuthToBook";
 import Payment from "pages/book/Payment";
+import TicketDetails from "pages/book/TicketDetails";
+import Successful from "pages/book/Successful";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/auth-to-book" element={<AuthToBook />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/ticket-details" element={<TicketDetails />} />
+        <Route path="/ticket-success" element={<Successful />} />
       </Routes>
     </div>
   );  
