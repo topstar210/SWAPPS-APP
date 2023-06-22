@@ -12,9 +12,16 @@ import {
     SocialLogin
 } from "./components";
 import { authStyle } from "./sharedStyle";
+import { useAppContext } from "context/AppContext";
 
 function Login() {
     const navigate = useNavigate();
+    const context = useAppContext();
+
+    const handleLogin = () => {
+        context?.setIsLogined(true);
+        navigate("/");
+    }
 
     return (
         <div className={`${authStyle.wrap} max-w-screen-lg`}>
@@ -47,7 +54,7 @@ function Login() {
                                 <Link to={'/auth/forgot-password'} className="my-auto text-sm text-blue-400">Forgot Password</Link>
                             </div>
                             <Button
-                                onClick={() => navigate("/")}
+                                onClick={handleLogin}
                                 className="mt-6 text-black normal-case" fullWidth>
                                 Login
                             </Button>

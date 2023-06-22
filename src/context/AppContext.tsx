@@ -1,13 +1,13 @@
 import { createContext, useState, useContext, ReactNode } from "react";
 
 interface AppContextData {
-  sideSearchbarOpen: boolean;
-  toggleSideSearchbar: ()=>void;
+  isLogined: boolean;
+  setIsLogined: (flag:boolean)=>void;
 }
 
 export const AppProvider = createContext<AppContextData | null>(null);
 
-export const useToggle = () => {
+export const useAppContext = () => {
   return useContext(AppProvider);
 };
 
@@ -16,17 +16,12 @@ interface RecordsProviderProps {
 }
 
 const ThemeContext = ({ children }:RecordsProviderProps) => {
-  const [sideSearchbarOpen, setSideSearchbarOpen] = useState(false);
-
-  const toggleSideSearchbar = () => {
-    setSideSearchbarOpen(!sideSearchbarOpen);
-  };
-
+  const [isLogined, setIsLogined] = useState(false);
 
   return (
     <AppProvider.Provider value={{
-      sideSearchbarOpen,
-      toggleSideSearchbar
+      isLogined,
+      setIsLogined
     }}>
       {children}
     </AppProvider.Provider>
