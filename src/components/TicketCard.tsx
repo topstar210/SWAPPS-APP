@@ -1,4 +1,4 @@
-
+import { useNavigate } from "react-router-dom";
 import TimeInfo from "components/TimeInfo";
 
 interface dataProps{
@@ -6,6 +6,8 @@ interface dataProps{
 }
 
 const TicketCard = ({data}: dataProps) => {
+    const navigate = useNavigate();
+
     return (
         <div className="p-5 sm:px-7 rounded-3xl bg-white border border-gray-300 w-full max-w-[550px] mb-3 mx-auto">
             <div className="flex justify-between gap-2 mb-3 text-[14px]">
@@ -28,7 +30,7 @@ const TicketCard = ({data}: dataProps) => {
                         4 days left
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex cursor-pointer transition hover:scale-105" onClick={() => navigate('/ticket')}>
                     <div className="text-center bg-card-price text-white font-bold px-2 py-2 h-[60px] rounded-l-2xl">
                         <div className="text-base">45%</div>
                         <div className="text-sm">Saving</div>

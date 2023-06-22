@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
 import Header from "components/Header";
@@ -6,6 +7,8 @@ import BookHeader from "./components/BookHeader";
 import PriceCard from "components/PriceCard";
 
 const Payment = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             <Header />
@@ -49,7 +52,7 @@ const Payment = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="sm:flex items-center justify-between gap-3 xl:gap-6">
+                        <div className="sm:flex items-center justify-between gap-3">
                             <div className="flex items-center justify-center gap-3">
                                 <div className="text-2xl font-bold">06:05 PM</div>
                                 <div>New York (JFK)</div>
@@ -112,10 +115,10 @@ const Payment = () => {
                     </div>
                 </div>
 
-                <div className="">
+                <div className="lg:w-5/12 lg:max-w-[450px]">
                     <PriceCard />
                     <div className="flex gap-3">
-                        <Button variant="outlined" size="lg" className="w-1/2 text-center">
+                        <Button onClick={() => navigate('/ticket')} variant="outlined" size="lg" className="w-1/2 text-center">
                             Previous
                         </Button>
                         <Button size="lg" className="w-1/2 text-center bg-btn-primary">

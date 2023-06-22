@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button, Avatar, Rating } from "@material-tailwind/react";
 
 import Header from "components/Header";
@@ -6,6 +7,8 @@ import BookHeader from "./components/BookHeader";
 import TicketsSection from "pages/home/TicketsSection";
 
 const Ticket = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="overflow-x-clip">
             <Header />
@@ -26,7 +29,7 @@ const Ticket = () => {
                         <Button variant="outlined" className="rounded-xl px-4">
                             <img src="/icons/share.svg" className="w-5" alt="share" />
                         </Button>
-                        <Button className="rounded-xl flex items-center bg-btn-primary">
+                        <Button onClick={() => navigate('/auth-to-book')} className="rounded-xl flex items-center bg-btn-primary">
                             BOOK NOW <img src="/icons/arrow-right.svg" className="w-[14px]" alt="" />
                         </Button>
                     </div>
