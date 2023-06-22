@@ -15,7 +15,7 @@ const AuthToBook = () => {
             <Header />
             <BookHeader />
 
-            <div className="lg:flex justify-between max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 gap-10">
+            <div className="lg:flex justify-between max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 gap-10 mb-56">
                 <div className="bg-white rounded-lg shadow-lg px-6 py-6 mb-8">
                     <div className="text-3xl font-bold mb-4">Login or Sign up to book</div>
                     <Input label="Phone Number" size="lg" className="rounded-sm" />

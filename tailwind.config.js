@@ -33,6 +33,7 @@ module.exports = withMT({
       },
       colors: {
         'purple': '#7A85E6',
+        'lightpurple': '#6F7ADC',
         'cover': "#00000082",
         'dark-green': "#062D4A"
       }

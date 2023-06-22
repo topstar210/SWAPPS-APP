@@ -13,7 +13,7 @@ const TicketDetails = () => {
             <Header />
             <BookHeader />
 
-            <div className="max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 mb-20">
+            <div className="max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 mb-56">
                 <div className="text-4xl font-[900] mb-6">
                     Tickets Details
                     <div className="bg-hr w-24 h-2 rounded-r-lg my-3"></div>
@@ -33,7 +33,7 @@ const TicketDetails = () => {
                         </Button>
                     </div>
                     <div className="flex justify-between items-center gap-3 mb-6">
-                        <div className="w-4 /6">
+                        <div className="w-4/6">
                             <div className="">Email</div>
                             <div className="text-xl font-bold break-words">elvis.presley@gmail.com</div>
                         </div>

@@ -18,7 +18,7 @@ const Payment = () => {
             <Header />
             <BookHeader />
 
-            <div className="lg:flex justify-between max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 gap-10">
+            <div className="lg:flex justify-between max-w-screen-xl mx-auto px-5 xl:px-0 pt-10 gap-10 mb-40">
                 <div className="">
                     <div className="w-full bg-white rounded-lg shadow-lg px-6 py-6 mb-8">
                         <div className="font-bold text-2xl mb-5">KLM A380 Airbus</div>
