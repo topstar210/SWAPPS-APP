@@ -35,6 +35,10 @@ module.exports = withMT({
         'purple': '#7A85E6'
       }
     },
+    colors:{
+      'cover': "#00000082",
+      'dark-green': "#062D4A"
+    }
   },
   plugins: [],
 });

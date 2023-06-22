@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
@@ -5,9 +6,12 @@ import Header from "components/Header";
 import Footer from "components/Footer";
 import BookHeader from "./components/BookHeader";
 import PriceCard from "components/PriceCard";
+import AddNewCardModal from "components/modals/AddNewCardModal";
 
 const Payment = () => {
     const navigate = useNavigate();
+
+    const [openModal, setOpenModal] = useState(false);
 
     return (
         <div>
@@ -107,7 +111,7 @@ const Payment = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-center border-2 rounded-2xl border-dashed border-blue-400 mt-4">
-                            <div className="text-center py-8">
+                            <div onClick={() => setOpenModal(!openModal)} className="text-center py-8 cursor-pointer">
                                 <img src="/icons/Add_circle.svg" className="mx-auto" alt="" />
                                 <div className="text-[12px]">Add a new card</div>
                             </div>
@@ -127,6 +131,8 @@ const Payment = () => {
                     </div>
                 </div>
             </div>
+
+            { openModal && <AddNewCardModal setOpenModal={setOpenModal} /> }
 
             <Footer />
         </div>
