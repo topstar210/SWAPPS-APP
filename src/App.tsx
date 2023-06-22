@@ -15,6 +15,7 @@ import AuthToBook from "pages/book/AuthToBook";
 import Payment from "pages/book/Payment";
 import TicketDetails from "pages/book/TicketDetails";
 import Successful from "pages/book/Successful";
+import Profile from "pages/profile/Profile";
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/ticket-details" element={<TicketDetails />} />
         <Route path="/ticket-success" element={<Successful />} />
+
+        <Route path="/profile/account" element={<Profile page="account" />} />
+        <Route path="/profile/history" element={<Profile page="history" />} />
+        <Route path="/profile/payment" element={<Profile page="payment" />} />
       </Routes>
     </div>
   );  

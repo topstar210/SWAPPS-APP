@@ -85,7 +85,7 @@ const Header = ({ page }: HeaderProps) => {
                                             </div>
                                         </ListItem>
                                         <div className="h-[1px] w-full bg-gray-300"></div>
-                                        <ListItem className="py-2">
+                                        <ListItem className="py-2" onClick={() => navigate('/profile/account')}>
                                             <div className="w-full flex justify-between items-center">
                                                 <div className="flex items-center gap-2">
                                                     <img src="/icons/User-dark.svg" alt="" />
@@ -94,7 +94,7 @@ const Header = ({ page }: HeaderProps) => {
                                                 <img src="/icons/arrow-up.svg" className="rotate-90 w-3 h-3" alt="" />
                                             </div>
                                         </ListItem>
-                                        <ListItem className="py-2">
+                                        <ListItem className="py-2" onClick={() => navigate('/profile/payment')}>
                                             <div className="w-full flex justify-between items-center">
                                                 <div className="flex items-center gap-2">
                                                     <img src="/icons/Payments.svg" alt="" />
