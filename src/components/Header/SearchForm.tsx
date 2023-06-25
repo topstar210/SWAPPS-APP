@@ -19,25 +19,25 @@ const SearchForm = () => {
         <div className="mx-auto w-fit">
             <div className="sm:flex sm:gap-1 md:gap-3 px-5 text-[15px]">
                 <div
-                    onClick={() => setSelTab(0)}
+                    // onClick={() => setSelTab(0)}
                     className={`${selTab !== 0 ? 'text-white bg-blue-200' : 'text-blue-500 bg-white'} px-3 sm:px-3 py-1 rounded-t-xl flex justify-center items-center gap-1 hover:cursor-pointer`}>
                     <FlightIcon color={`${selTab===0?'#52B4FF':''}`} />
                     Flights
                 </div>
                 <div
-                    onClick={() => setSelTab(1)}
+                    // onClick={() => setSelTab(1)}
                     className={`${selTab !== 1 ? 'text-white bg-blue-200' : 'text-blue-500 bg-white'} px-3 sm:px-3 py-1 sm:rounded-t-xl flex justify-center items-center gap-1 hover:cursor-pointer`}>
                     <HotelIcon color={`${selTab===1?'#52B4FF':''}`} />
                     Hotels
                 </div>
                 <div
-                    onClick={() => setSelTab(2)}
+                    // onClick={() => setSelTab(2)}
                     className={`${selTab !== 2 ? 'text-white bg-blue-200' : 'text-blue-500 bg-white'} px-3 sm:px-3 py-1 sm:rounded-t-xl flex justify-center items-center gap-1 hover:cursor-pointer`}>
                     <HolidayIcon color={`${selTab===2?'#52B4FF':''}`} />
                     Holidays
                 </div>
                 <div
-                    onClick={() => setSelTab(3)}
+                    // onClick={() => setSelTab(3)}
                     className={`${selTab !== 3 ? 'text-white bg-blue-200' : 'text-blue-500 bg-white'} px-3 sm:px-3 py-1 rounded-b-xl sm:rounded-b-none mb-5 sm:mb-0 sm:rounded-t-xl flex justify-center items-center gap-1 hover:cursor-pointer`}>
                     <VoucherIcon color={`${selTab===3?'#52B4FF':''}`} />
                     Vouchers

@@ -173,7 +173,13 @@ const Header = ({ page }: HeaderProps) => {
                         </Button>
                     </div>
                     <div className="grid gap-2 grid-cols-2">
-                        <Button size="sm" className="normal-case border-purple text-purple p-2 sm:p-auto" variant="outlined">Browse</Button>
+                        <Button
+                            onClick={() => navigate('/')}
+                            size="sm"
+                            className="normal-case border-purple text-purple p-2 sm:p-auto"
+                            variant="outlined">
+                            Browse
+                        </Button>
                         <Button size="sm" className="normal-case text-white bg-purple p-2 sm:p-auto">Sell</Button>
                     </div>
                 </div>
@@ -182,7 +188,9 @@ const Header = ({ page }: HeaderProps) => {
                 <div className="py-6 px-5">
                     <div className="w-full">
                         <SearchForm />
-                        <img src="/images/flight-in-round.svg" className="hidden 2xl:block absolute 2xl:left-[80%] 3xl:left-[70%] -bottom-[125px]" alt="" />
+                        <img src="/images/flight.gif" 
+                            className="hidden 2xl:block absolute 2xl:left-[83%] 3xl:left-[74%] -bottom-[25px] w-[271px] h-[271px] -rotate-[19.254deg] rounded-full shadow-flight" 
+                            alt="" />
                     </div>
                 </div>
             }

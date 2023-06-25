@@ -36,6 +36,9 @@ module.exports = withMT({
         'lightpurple': '#6F7ADC',
         'cover': "#00000082",
         'dark-green': "#062D4A"
+      },
+      boxShadow: {
+        'flight': "0px 37px 89px -20px rgba(85, 169, 250, 0.62)"
       }
     },
   },

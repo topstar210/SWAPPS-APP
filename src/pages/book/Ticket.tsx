@@ -40,26 +40,26 @@ const Ticket = () => {
                 <div className="lg:flex bg-white rounded-xl px-5 sm:px-12 border border-gray-300 pt-8 mb-9">
                     <div className="lg:w-7/12 mb-5">
                         <div className="text-3xl font-bold mb-4">Information</div>
-                        <div className="flex flex-wrap gap-5">
-                            <div className="flex gap-2 items-center mb-4">
-                                <img src="/icons/flight-up.svg" alt="flight-up" />
-                                06:05 PM 29 Mar 2024
-                            </div>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div className="flex gap-2 items-center mb-4">
                                 <img src="/icons/flight-up.svg" alt="flight-up" />
                                 06:05 PM 29 Mar 2024
                             </div>
                             <div className="flex gap-2 items-center mb-4">
                                 <img src="/icons/flight-down.svg" alt="flight-up" />
-                                06:05 PM 29 Mar 2024
+                                05:40 AM 30 Mar 2024
                             </div>
                             <div className="flex gap-2 items-center mb-4">
                                 <img src="/icons/flight-down.svg" alt="flight-up" />
-                                06:05 PM 29 Mar 2024
+                                1 adult
                             </div>
                             <div className="flex gap-2 items-center mb-4">
                                 <img src="/icons/flight-up.svg" alt="flight-up" />
-                                06:05 PM 29 Mar 2024
+                                Economy Class Class
+                            </div>
+                            <div className="flex gap-2 items-center mb-4">
+                                <img src="/icons/flight-down.svg" alt="flight-up" />
+                                Meal included
                             </div>
                         </div>
                     </div>
@@ -114,13 +114,15 @@ const Ticket = () => {
                                     <div className="w-[14px] h-[14px] rounded-full bg-blue-500"></div>
                                     <div>
                                         <div className="text-blue-500">Outbound departure time</div>
-                                        <div>29/03/2024 18:05</div>
+                                        <div>29/03/2024 8:05 AM</div>
                                     </div>
                                 </div>
                             </>)
                         }
                     </div>
-                    <img src="/images/flight-in-round.svg" className="absolute -bottom-[135px] -right-[125px]" alt="" />
+                    <img src="/images/flight.gif" 
+                            className="absolute -bottom-[35px] -right-[50px] w-[271px] h-[271px] -rotate-[19.254deg] rounded-full shadow-flight" 
+                            alt="" />
                 </div>
 
                 <div>
