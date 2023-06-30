@@ -57,6 +57,10 @@ ul[role="listbox"] {
     outline: none
 }
 
+.filter-thumb.filter-thumb-1 .mark-wrap{
+    display: flex;
+    justify-content: end;
+}
 .filter-thumb .f_mark{
     width: 24px;
     height: 24px;

@@ -7,6 +7,14 @@ import { Radio, Checkbox, Button } from "@material-tailwind/react";
 const Sidebar = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
+    const minutesFormat = (minutes: number) => {
+        const date = new Date();
+        date.setHours(0, minutes); // set hours to 0 and minutes to the value
+
+        const formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        return formattedTime;
+    }
+
     return (
         <div className="w-full max-w-[402px]">
             <div className="bg-white rounded-3xl border border-gray-300 py-2 px-5 text-sm">
@@ -136,12 +144,12 @@ const Sidebar = () => {
                             className="filter-slider w-full"
                             thumbClassName="filter-thumb"
                             trackClassName="filter-track"
-                            defaultValue={[0, 24]}
+                            defaultValue={[0, 1440]}
                             min={0}
-                            max={24}
+                            max={1440}
                             renderThumb={(props, state) => <div {...props}>
-                                <div className="f_mark"></div>
-                                <div className="f_value">{state.valueNow}</div>
+                                <div className="mark-wrap"><div className="f_mark"></div></div>
+                                <div className="text-sm w-[65px]">{minutesFormat(state.valueNow)}</div>
                             </div>}
                             renderTrack={(props, state) => <div {...props}></div>}
                             minDistance={1}
@@ -196,7 +204,7 @@ const Sidebar = () => {
                                 containerProps={{ className: "px-0" }}
                             />
                             <label htmlFor="airlines-delta" className="ml-3">
-                            DELTA AIRLINES
+                                DELTA AIRLINES
                             </label>
                         </div>
                         <div className="flex items-center">
@@ -207,7 +215,7 @@ const Sidebar = () => {
                                 containerProps={{ className: "px-0" }}
                             />
                             <label htmlFor="airlines-fly-dubai" className="ml-3">
-                            Fly Dubai
+                                Fly Dubai
                             </label>
                         </div>
                         <div className="flex items-center">
